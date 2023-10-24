@@ -1,3 +1,3 @@
-# Haxe-IP-Test
+# Haxe Playground: Pop-Up Windows!
 
-* Just a thing that shows the users IP lmao
+* A silly thing that just shows a A pop-up window

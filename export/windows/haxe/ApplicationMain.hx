@@ -16,11 +16,11 @@ class ApplicationMain
 	#if !macro
 	public static function main()
 	{
-		lime.system.System.__registerEntryPoint("IPiss", create);
+		lime.system.System.__registerEntryPoint("HPPUW", create);
 
 		#if (js && html5)
 		#if (munit || utest)
-		lime.system.System.embed("IPiss", null, 1280, 720);
+		lime.system.System.embed("HPPUW", null, 1280, 720);
 		#end
 		#else
 		create(null);
@@ -35,10 +35,10 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "5";
+		app.meta["build"] = "2";
 		app.meta["company"] = "Blitzdotceeess";
-		app.meta["file"] = "IPiss";
-		app.meta["name"] = "Haxe IP";
+		app.meta["file"] = "HPPUW";
+		app.meta["name"] = "Haxe Playground: Pop-Up Windows";
 		app.meta["packageName"] = "com.example.myapp";
 		app.meta["version"] = "0.0.1";
 
@@ -60,7 +60,7 @@ class ApplicationMain
 			minimized: false,
 			parameters: {},
 			resizable: true,
-			title: "Haxe IP",
+			title: "Haxe Playground: Pop-Up Windows",
 			width: 1280,
 			x: null,
 			y: null,
@@ -102,7 +102,7 @@ class ApplicationMain
 		app.createWindow(attributes);
 		
 		#elseif air
-		app.window.title = "Haxe IP";
+		app.window.title = "Haxe Playground: Pop-Up Windows";
 		#else
 		app.window.context.attributes.background = 0;
 		app.window.frameRate = null;

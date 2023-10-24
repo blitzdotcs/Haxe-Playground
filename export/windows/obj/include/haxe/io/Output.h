@@ -68,9 +68,6 @@ class HXCPP_CLASS_ATTRIBUTES Output_obj : public ::hx::Object
 		void writeFullBytes( ::haxe::io::Bytes s,int pos,int len);
 		::Dynamic writeFullBytes_dyn();
 
-		void prepare(int nbytes);
-		::Dynamic prepare_dyn();
-
 		void writeInput( ::haxe::io::Input i, ::Dynamic bufsize);
 		::Dynamic writeInput_dyn();
 

@@ -111,9 +111,6 @@
 #ifndef INCLUDED_flixel_tile_FlxTilemapAutoTiling
 #include <flixel/tile/FlxTilemapAutoTiling.h>
 #endif
-#ifndef INCLUDED_flixel_text_FlxTextBorderStyle
-#include <flixel/text/FlxTextBorderStyle.h>
-#endif
 #ifndef INCLUDED_flixel_system_debug_FlxDebuggerLayout
 #include <flixel/system/debug/FlxDebuggerLayout.h>
 #endif
@@ -146,21 +143,6 @@
 #endif
 #ifndef INCLUDED_ValueType
 #include <ValueType.h>
-#endif
-#ifndef INCLUDED_sys_ssl_Socket
-#include <sys/ssl/Socket.h>
-#endif
-#ifndef INCLUDED_sys_ssl_Key
-#include <sys/ssl/Key.h>
-#endif
-#ifndef INCLUDED_sys_ssl_Certificate
-#include <sys/ssl/Certificate.h>
-#endif
-#ifndef INCLUDED_sys_net_Host
-#include <sys/net/Host.h>
-#endif
-#ifndef INCLUDED_sys_Http
-#include <sys/Http.h>
 #endif
 #ifndef INCLUDED_openfl_utils__internal_TouchData
 #include <openfl/utils/_internal/TouchData.h>
@@ -494,6 +476,9 @@
 #endif
 #ifndef INCLUDED_openfl_display__internal_FlashTilemap
 #include <openfl/display/_internal/FlashTilemap.h>
+#endif
+#ifndef INCLUDED_openfl_geom_Point
+#include <openfl/geom/Point.h>
 #endif
 #ifndef INCLUDED_openfl_display__internal_FlashRenderer
 #include <openfl/display/_internal/FlashRenderer.h>
@@ -927,12 +912,6 @@
 #ifndef INCLUDED_flixel_tile_FlxBaseTilemap
 #include <flixel/tile/FlxBaseTilemap.h>
 #endif
-#ifndef INCLUDED_flixel_text__FlxText_FlxTextAlign_Impl_
-#include <flixel/text/_FlxText/FlxTextAlign_Impl_.h>
-#endif
-#ifndef INCLUDED_flixel_text_FlxText
-#include <flixel/text/FlxText.h>
-#endif
 #ifndef INCLUDED_flixel_system_debug_stats__Stats_GraphicMaximizeButton
 #include <flixel/system/debug/stats/_Stats/GraphicMaximizeButton.h>
 #endif
@@ -1128,12 +1107,6 @@
 #ifndef INCLUDED_flixel_graphics_tile_FlxDrawBaseItem
 #include <flixel/graphics/tile/FlxDrawBaseItem.h>
 #endif
-#ifndef INCLUDED_flixel_graphics_atlas_FlxAtlas
-#include <flixel/graphics/atlas/FlxAtlas.h>
-#endif
-#ifndef INCLUDED_openfl_geom_Point
-#include <openfl/geom/Point.h>
-#endif
 #ifndef INCLUDED_flixel_graphics_FlxGraphic
 #include <flixel/graphics/FlxGraphic.h>
 #endif
@@ -1238,21 +1211,6 @@
 #endif
 #ifndef INCLUDED_sys_thread_Deque
 #include <sys/thread/Deque.h>
-#endif
-#ifndef INCLUDED_sys_ssl__Socket_SocketOutput
-#include <sys/ssl/_Socket/SocketOutput.h>
-#endif
-#ifndef INCLUDED_sys_ssl__Socket_SocketInput
-#include <sys/ssl/_Socket/SocketInput.h>
-#endif
-#ifndef INCLUDED_sys_net_Socket
-#include <sys/net/Socket.h>
-#endif
-#ifndef INCLUDED_sys_net__Socket_SocketOutput
-#include <sys/net/_Socket/SocketOutput.h>
-#endif
-#ifndef INCLUDED_sys_net__Socket_SocketInput
-#include <sys/net/_Socket/SocketInput.h>
 #endif
 #ifndef INCLUDED_sys_io_Process
 #include <sys/io/Process.h>
@@ -2460,9 +2418,6 @@
 #ifndef INCLUDED_haxe_io_Eof
 #include <haxe/io/Eof.h>
 #endif
-#ifndef INCLUDED_haxe_io_BytesOutput
-#include <haxe/io/BytesOutput.h>
-#endif
 #ifndef INCLUDED_haxe_io_Output
 #include <haxe/io/Output.h>
 #endif
@@ -2474,9 +2429,6 @@
 #endif
 #ifndef INCLUDED_haxe_io_BytesBuffer
 #include <haxe/io/BytesBuffer.h>
-#endif
-#ifndef INCLUDED_haxe_http_HttpBase
-#include <haxe/http/HttpBase.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
 #include <haxe/format/JsonPrinter.h>
@@ -2555,15 +2507,6 @@
 #endif
 #ifndef INCLUDED_haxe__CallStack_CallStack_Impl_
 #include <haxe/_CallStack/CallStack_Impl_.h>
-#endif
-#ifndef INCLUDED_flixel_util_helpers_FlxRange
-#include <flixel/util/helpers/FlxRange.h>
-#endif
-#ifndef INCLUDED_flixel_util__FlxUnicodeUtil_UnicodeBuffer_Impl_
-#include <flixel/util/_FlxUnicodeUtil/UnicodeBuffer_Impl_.h>
-#endif
-#ifndef INCLUDED_flixel_util_FlxUnicodeUtil
-#include <flixel/util/FlxUnicodeUtil.h>
 #endif
 #ifndef INCLUDED_flixel_util_FlxTimerManager
 #include <flixel/util/FlxTimerManager.h>
@@ -2660,15 +2603,6 @@
 #endif
 #ifndef INCLUDED_flixel_tile_FlxTileblock
 #include <flixel/tile/FlxTileblock.h>
-#endif
-#ifndef INCLUDED_flixel_text_FlxTextFormatMarkerPair
-#include <flixel/text/FlxTextFormatMarkerPair.h>
-#endif
-#ifndef INCLUDED_flixel_text__FlxText_FlxTextFormatRange
-#include <flixel/text/_FlxText/FlxTextFormatRange.h>
-#endif
-#ifndef INCLUDED_flixel_text_FlxTextFormat
-#include <flixel/text/FlxTextFormat.h>
 #endif
 #ifndef INCLUDED_flixel_system_ui_FlxSystemButton
 #include <flixel/system/ui/FlxSystemButton.h>
@@ -2898,9 +2832,6 @@
 #ifndef INCLUDED_flixel_graphics_frames_FlxFramesCollection
 #include <flixel/graphics/frames/FlxFramesCollection.h>
 #endif
-#ifndef INCLUDED_flixel_graphics_atlas_FlxNode
-#include <flixel/graphics/atlas/FlxNode.h>
-#endif
 #ifndef INCLUDED_flixel_effects_postprocess_PostProcess
 #include <flixel/effects/postprocess/PostProcess.h>
 #endif
@@ -2987,9 +2918,6 @@
 #endif
 #ifndef INCLUDED__Xml_XmlType_Impl_
 #include <_Xml/XmlType_Impl_.h>
-#endif
-#ifndef INCLUDED__UnicodeString_UnicodeString_Impl_
-#include <_UnicodeString/UnicodeString_Impl_.h>
 #endif
 #ifndef INCLUDED_Type
 #include <Type.h>
@@ -3140,7 +3068,6 @@ __files__boot();
 ::flixel::util::FlxHorizontalAlign_obj::__register();
 ::flixel::util::FlxAxes_obj::__register();
 ::flixel::tile::FlxTilemapAutoTiling_obj::__register();
-::flixel::text::FlxTextBorderStyle_obj::__register();
 ::flixel::_hx_system::debug::FlxDebuggerLayout_obj::__register();
 ::flixel::input::gamepad::mappings::Manufacturer_obj::__register();
 ::flixel::input::gamepad::FlxAnalogToDigitalMode_obj::__register();
@@ -3152,11 +3079,6 @@ __files__boot();
 ::flixel::FlxRenderMethod_obj::__register();
 ::flixel::FlxCameraFollowStyle_obj::__register();
 ::ValueType_obj::__register();
-::sys::ssl::Socket_obj::__register();
-::sys::ssl::Key_obj::__register();
-::sys::ssl::Certificate_obj::__register();
-::sys::net::Host_obj::__register();
-::sys::Http_obj::__register();
 ::openfl::utils::_internal::TouchData_obj::__register();
 ::openfl::utils::_internal::Lib_obj::__register();
 ::haxe::lang::Iterable_obj::__register();
@@ -3268,6 +3190,7 @@ __files__boot();
 ::openfl::display::_internal::SamplerState_obj::__register();
 ::openfl::display::_internal::PerlinNoise_obj::__register();
 ::openfl::display::_internal::FlashTilemap_obj::__register();
+::openfl::geom::Point_obj::__register();
 ::openfl::display::_internal::FlashRenderer_obj::__register();
 ::openfl::display::_internal::DrawCommandReader_obj::__register();
 ::openfl::display::_internal::DOMVideo_obj::__register();
@@ -3412,8 +3335,6 @@ __files__boot();
 ::flixel::tweens::FlxTween_obj::__register();
 ::flixel::tweens::FlxEase_obj::__register();
 ::flixel::tile::FlxBaseTilemap_obj::__register();
-::flixel::text::_FlxText::FlxTextAlign_Impl__obj::__register();
-::flixel::text::FlxText_obj::__register();
 ::flixel::_hx_system::debug::stats::_Stats::GraphicMaximizeButton_obj::__register();
 ::flixel::_hx_system::debug::stats::_Stats::GraphicMinimizeButton_obj::__register();
 ::flixel::_hx_system::debug::log::LogStyle_obj::__register();
@@ -3479,8 +3400,6 @@ __files__boot();
 ::flixel::graphics::tile::FlxDrawTrianglesItem_obj::__register();
 ::flixel::graphics::tile::FlxDrawQuadsItem_obj::__register();
 ::flixel::graphics::tile::FlxDrawBaseItem_obj::__register();
-::flixel::graphics::atlas::FlxAtlas_obj::__register();
-::openfl::geom::Point_obj::__register();
 ::flixel::graphics::FlxGraphic_obj::__register();
 ::flixel::effects::FlxFlicker_obj::__register();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__register();
@@ -3516,11 +3435,6 @@ __files__boot();
 ::sys::thread::Lock_obj::__register();
 ::sys::thread::_EventLoop::RegularEvent_obj::__register();
 ::sys::thread::Deque_obj::__register();
-::sys::ssl::_Socket::SocketOutput_obj::__register();
-::sys::ssl::_Socket::SocketInput_obj::__register();
-::sys::net::Socket_obj::__register();
-::sys::net::_Socket::SocketOutput_obj::__register();
-::sys::net::_Socket::SocketInput_obj::__register();
 ::sys::io::Process_obj::__register();
 ::sys::io::_Process::Stdout_obj::__register();
 ::sys::io::_Process::Stdin_obj::__register();
@@ -3923,12 +3837,10 @@ __files__boot();
 ::haxe::io::Path_obj::__register();
 ::haxe::io::FPHelper_obj::__register();
 ::haxe::io::Eof_obj::__register();
-::haxe::io::BytesOutput_obj::__register();
 ::haxe::io::Output_obj::__register();
 ::haxe::io::BytesInput_obj::__register();
 ::haxe::io::Input_obj::__register();
 ::haxe::io::BytesBuffer_obj::__register();
-::haxe::http::HttpBase_obj::__register();
 ::haxe::format::JsonPrinter_obj::__register();
 ::haxe::format::JsonParser_obj::__register();
 ::haxe::exceptions::NotImplementedException_obj::__register();
@@ -3955,9 +3867,6 @@ __files__boot();
 ::haxe::NativeStackTrace_obj::__register();
 ::haxe::Exception_obj::__register();
 ::haxe::_CallStack::CallStack_Impl__obj::__register();
-::flixel::util::helpers::FlxRange_obj::__register();
-::flixel::util::_FlxUnicodeUtil::UnicodeBuffer_Impl__obj::__register();
-::flixel::util::FlxUnicodeUtil_obj::__register();
 ::flixel::util::FlxTimerManager_obj::__register();
 ::flixel::util::FlxTimer_obj::__register();
 ::flixel::util::FlxStringUtil_obj::__register();
@@ -3990,9 +3899,6 @@ __files__boot();
 ::flixel::tweens::misc::AngleTween_obj::__register();
 ::flixel::tweens::FlxTweenManager_obj::__register();
 ::flixel::tile::FlxTileblock_obj::__register();
-::flixel::text::FlxTextFormatMarkerPair_obj::__register();
-::flixel::text::_FlxText::FlxTextFormatRange_obj::__register();
-::flixel::text::FlxTextFormat_obj::__register();
 ::flixel::_hx_system::ui::FlxSystemButton_obj::__register();
 ::flixel::_hx_system::ui::FlxSoundTray_obj::__register();
 ::flixel::_hx_system::ui::FlxFocusLostScreen_obj::__register();
@@ -4069,7 +3975,6 @@ __files__boot();
 ::flixel::graphics::frames::FlxFrame_obj::__register();
 ::flixel::graphics::frames::FlxAtlasFrames_obj::__register();
 ::flixel::graphics::frames::FlxFramesCollection_obj::__register();
-::flixel::graphics::atlas::FlxNode_obj::__register();
 ::flixel::effects::postprocess::PostProcess_obj::__register();
 ::flixel::util::FlxPool_flixel_effects_FlxFlicker_obj::__register();
 ::flixel::animation::FlxAnimationController_obj::__register();
@@ -4099,7 +4004,6 @@ __files__boot();
 ::cpp::vm::WeakRef_obj::__register();
 ::cpp::Lib_obj::__register();
 ::_Xml::XmlType_Impl__obj::__register();
-::_UnicodeString::UnicodeString_Impl__obj::__register();
 ::Type_obj::__register();
 ::Sys_obj::__register();
 ::StringTools_obj::__register();
@@ -4172,7 +4076,6 @@ __files__boot();
 ::flixel::util::FlxHorizontalAlign_obj::__boot();
 ::flixel::util::FlxAxes_obj::__boot();
 ::flixel::tile::FlxTilemapAutoTiling_obj::__boot();
-::flixel::text::FlxTextBorderStyle_obj::__boot();
 ::flixel::_hx_system::debug::FlxDebuggerLayout_obj::__boot();
 ::flixel::input::gamepad::mappings::Manufacturer_obj::__boot();
 ::flixel::input::gamepad::FlxAnalogToDigitalMode_obj::__boot();
@@ -4191,10 +4094,6 @@ __files__boot();
 ::lime::_hx_system::CFFI_obj::__init__();
 ::sys::thread::_Thread::HaxeThread_obj::__init__();
 ::lime::utils::Log_obj::__init__();
-::sys::net::Host_obj::__init__();
-::sys::ssl::Certificate_obj::__init__();
-::sys::ssl::Key_obj::__init__();
-::sys::ssl::Socket_obj::__init__();
 ::haxe::Log_obj::__boot();
 ::lime::_internal::backend::native::NativeCFFI_obj::__boot();
 ::lime::_internal::backend::native::NativeApplication_obj::__boot();
@@ -4225,8 +4124,6 @@ __files__boot();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__boot();
 ::flixel::effects::FlxFlicker_obj::__boot();
 ::flixel::graphics::FlxGraphic_obj::__boot();
-::openfl::geom::Point_obj::__boot();
-::flixel::graphics::atlas::FlxAtlas_obj::__boot();
 ::flixel::graphics::tile::FlxDrawBaseItem_obj::__boot();
 ::flixel::graphics::tile::FlxDrawQuadsItem_obj::__boot();
 ::flixel::graphics::tile::FlxDrawTrianglesItem_obj::__boot();
@@ -4292,8 +4189,6 @@ __files__boot();
 ::flixel::_hx_system::debug::log::LogStyle_obj::__boot();
 ::flixel::_hx_system::debug::stats::_Stats::GraphicMinimizeButton_obj::__boot();
 ::flixel::_hx_system::debug::stats::_Stats::GraphicMaximizeButton_obj::__boot();
-::flixel::text::FlxText_obj::__boot();
-::flixel::text::_FlxText::FlxTextAlign_Impl__obj::__boot();
 ::flixel::tile::FlxBaseTilemap_obj::__boot();
 ::flixel::tweens::FlxEase_obj::__boot();
 ::flixel::tweens::FlxTween_obj::__boot();
@@ -4438,6 +4333,7 @@ __files__boot();
 ::openfl::display::_internal::DOMVideo_obj::__boot();
 ::openfl::display::_internal::DrawCommandReader_obj::__boot();
 ::openfl::display::_internal::FlashRenderer_obj::__boot();
+::openfl::geom::Point_obj::__boot();
 ::openfl::display::_internal::FlashTilemap_obj::__boot();
 ::openfl::display::_internal::PerlinNoise_obj::__boot();
 ::openfl::display::_internal::SamplerState_obj::__boot();
@@ -4549,10 +4445,5 @@ __files__boot();
 ::haxe::lang::Iterable_obj::__boot();
 ::openfl::utils::_internal::Lib_obj::__boot();
 ::openfl::utils::_internal::TouchData_obj::__boot();
-::sys::Http_obj::__boot();
-::sys::net::Host_obj::__boot();
-::sys::ssl::Certificate_obj::__boot();
-::sys::ssl::Key_obj::__boot();
-::sys::ssl::Socket_obj::__boot();
 }
 

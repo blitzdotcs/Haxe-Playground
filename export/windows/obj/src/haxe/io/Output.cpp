@@ -36,7 +36,6 @@ HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_57_writeBytes,"haxe.io.Output","wr
 HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_92_close,"haxe.io.Output","close",0xe726bfeb,"haxe.io.Output.close","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",92,0x05ec9a64)
 HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_103_write,"haxe.io.Output","write",0x6f1d1512,"haxe.io.Output.write","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",103,0x05ec9a64)
 HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_121_writeFullBytes,"haxe.io.Output","writeFullBytes",0xc2c420ea,"haxe.io.Output.writeFullBytes","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",121,0x05ec9a64)
-HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_246_prepare,"haxe.io.Output","prepare",0xcd01ec7a,"haxe.io.Output.prepare","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",246,0x05ec9a64)
 HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_254_writeInput,"haxe.io.Output","writeInput",0xaa0e7d98,"haxe.io.Output.writeInput","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",254,0x05ec9a64)
 HX_LOCAL_STACK_FRAME(_hx_pos_f6deb7e554df00ae_278_writeString,"haxe.io.Output","writeString",0x97e1cb83,"haxe.io.Output.writeString","C:\\HaxeToolkit\\haxe\\std/haxe/io/Output.hx",278,0x05ec9a64)
 namespace haxe{
@@ -135,13 +134,6 @@ HXLINE( 124)			len = (len - k);
 
 HX_DEFINE_DYNAMIC_FUNC3(Output_obj,writeFullBytes,(void))
 
-void Output_obj::prepare(int nbytes){
-            	HX_STACKFRAME(&_hx_pos_f6deb7e554df00ae_246_prepare)
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC1(Output_obj,prepare,(void))
-
 void Output_obj::writeInput( ::haxe::io::Input i, ::Dynamic bufsize){
             	HX_STACKFRAME(&_hx_pos_f6deb7e554df00ae_254_writeInput)
 HXLINE( 255)		if (::hx::IsNull( bufsize )) {
@@ -206,9 +198,6 @@ Output_obj::Output_obj()
 		if (HX_FIELD_EQ(inName,"close") ) { return ::hx::Val( close_dyn() ); }
 		if (HX_FIELD_EQ(inName,"write") ) { return ::hx::Val( write_dyn() ); }
 		break;
-	case 7:
-		if (HX_FIELD_EQ(inName,"prepare") ) { return ::hx::Val( prepare_dyn() ); }
-		break;
 	case 9:
 		if (HX_FIELD_EQ(inName,"writeByte") ) { return ::hx::Val( writeByte_dyn() ); }
 		break;
@@ -236,7 +225,6 @@ static ::String Output_obj_sMemberFields[] = {
 	HX_("close",b8,17,63,48),
 	HX_("write",df,6c,59,d0),
 	HX_("writeFullBytes",7d,e7,66,a4),
-	HX_("prepare",87,91,dd,37),
 	HX_("writeInput",ab,be,df,52),
 	HX_("writeString",10,7b,29,a6),
 	::String(null()) };

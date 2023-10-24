@@ -147,7 +147,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxSprite_obj : public  ::flixel::FlxObject_obj
 		void setGraphicSize(::hx::Null< int >  Width,::hx::Null< int >  Height);
 		::Dynamic setGraphicSize_dyn();
 
-		virtual void updateHitbox();
+		void updateHitbox();
 		::Dynamic updateHitbox_dyn();
 
 		virtual void resetHelpers();
@@ -172,7 +172,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxSprite_obj : public  ::flixel::FlxObject_obj
 		virtual void stamp( ::flixel::FlxSprite Brush,::hx::Null< int >  X,::hx::Null< int >  Y);
 		::Dynamic stamp_dyn();
 
-		virtual void drawFrame(::hx::Null< bool >  Force);
+		void drawFrame(::hx::Null< bool >  Force);
 		::Dynamic drawFrame_dyn();
 
 		void centerOffsets(::hx::Null< bool >  AdjustPosition);
@@ -247,7 +247,7 @@ class HXCPP_CLASS_ATTRIBUTES FlxSprite_obj : public  ::flixel::FlxObject_obj
 		virtual  ::Dynamic set_blend( ::Dynamic Value);
 		::Dynamic set_blend_dyn();
 
-		virtual  ::flixel::graphics::FlxGraphic set_graphic( ::flixel::graphics::FlxGraphic Value);
+		 ::flixel::graphics::FlxGraphic set_graphic( ::flixel::graphics::FlxGraphic Value);
 		::Dynamic set_graphic_dyn();
 
 		virtual  ::flixel::math::FlxRect set_clipRect( ::flixel::math::FlxRect rect);
