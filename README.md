@@ -1,3 +1,3 @@
-# Haxe-IP-Test
+# HaxePlayground - Open Executable
 
-* Just a thing that shows the users IP lmao
+* How 2 open exe fiel wit haxe coed?!??!??
