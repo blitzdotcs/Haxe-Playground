@@ -147,21 +147,6 @@
 #ifndef INCLUDED_ValueType
 #include <ValueType.h>
 #endif
-#ifndef INCLUDED_sys_ssl_Socket
-#include <sys/ssl/Socket.h>
-#endif
-#ifndef INCLUDED_sys_ssl_Key
-#include <sys/ssl/Key.h>
-#endif
-#ifndef INCLUDED_sys_ssl_Certificate
-#include <sys/ssl/Certificate.h>
-#endif
-#ifndef INCLUDED_sys_net_Host
-#include <sys/net/Host.h>
-#endif
-#ifndef INCLUDED_sys_Http
-#include <sys/Http.h>
-#endif
 #ifndef INCLUDED_openfl_utils__internal_TouchData
 #include <openfl/utils/_internal/TouchData.h>
 #endif
@@ -1238,21 +1223,6 @@
 #endif
 #ifndef INCLUDED_sys_thread_Deque
 #include <sys/thread/Deque.h>
-#endif
-#ifndef INCLUDED_sys_ssl__Socket_SocketOutput
-#include <sys/ssl/_Socket/SocketOutput.h>
-#endif
-#ifndef INCLUDED_sys_ssl__Socket_SocketInput
-#include <sys/ssl/_Socket/SocketInput.h>
-#endif
-#ifndef INCLUDED_sys_net_Socket
-#include <sys/net/Socket.h>
-#endif
-#ifndef INCLUDED_sys_net__Socket_SocketOutput
-#include <sys/net/_Socket/SocketOutput.h>
-#endif
-#ifndef INCLUDED_sys_net__Socket_SocketInput
-#include <sys/net/_Socket/SocketInput.h>
 #endif
 #ifndef INCLUDED_sys_io_Process
 #include <sys/io/Process.h>
@@ -2460,9 +2430,6 @@
 #ifndef INCLUDED_haxe_io_Eof
 #include <haxe/io/Eof.h>
 #endif
-#ifndef INCLUDED_haxe_io_BytesOutput
-#include <haxe/io/BytesOutput.h>
-#endif
 #ifndef INCLUDED_haxe_io_Output
 #include <haxe/io/Output.h>
 #endif
@@ -2474,9 +2441,6 @@
 #endif
 #ifndef INCLUDED_haxe_io_BytesBuffer
 #include <haxe/io/BytesBuffer.h>
-#endif
-#ifndef INCLUDED_haxe_http_HttpBase
-#include <haxe/http/HttpBase.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
 #include <haxe/format/JsonPrinter.h>
@@ -3152,11 +3116,6 @@ __files__boot();
 ::flixel::FlxRenderMethod_obj::__register();
 ::flixel::FlxCameraFollowStyle_obj::__register();
 ::ValueType_obj::__register();
-::sys::ssl::Socket_obj::__register();
-::sys::ssl::Key_obj::__register();
-::sys::ssl::Certificate_obj::__register();
-::sys::net::Host_obj::__register();
-::sys::Http_obj::__register();
 ::openfl::utils::_internal::TouchData_obj::__register();
 ::openfl::utils::_internal::Lib_obj::__register();
 ::haxe::lang::Iterable_obj::__register();
@@ -3516,11 +3475,6 @@ __files__boot();
 ::sys::thread::Lock_obj::__register();
 ::sys::thread::_EventLoop::RegularEvent_obj::__register();
 ::sys::thread::Deque_obj::__register();
-::sys::ssl::_Socket::SocketOutput_obj::__register();
-::sys::ssl::_Socket::SocketInput_obj::__register();
-::sys::net::Socket_obj::__register();
-::sys::net::_Socket::SocketOutput_obj::__register();
-::sys::net::_Socket::SocketInput_obj::__register();
 ::sys::io::Process_obj::__register();
 ::sys::io::_Process::Stdout_obj::__register();
 ::sys::io::_Process::Stdin_obj::__register();
@@ -3923,12 +3877,10 @@ __files__boot();
 ::haxe::io::Path_obj::__register();
 ::haxe::io::FPHelper_obj::__register();
 ::haxe::io::Eof_obj::__register();
-::haxe::io::BytesOutput_obj::__register();
 ::haxe::io::Output_obj::__register();
 ::haxe::io::BytesInput_obj::__register();
 ::haxe::io::Input_obj::__register();
 ::haxe::io::BytesBuffer_obj::__register();
-::haxe::http::HttpBase_obj::__register();
 ::haxe::format::JsonPrinter_obj::__register();
 ::haxe::format::JsonParser_obj::__register();
 ::haxe::exceptions::NotImplementedException_obj::__register();
@@ -4191,10 +4143,6 @@ __files__boot();
 ::lime::_hx_system::CFFI_obj::__init__();
 ::sys::thread::_Thread::HaxeThread_obj::__init__();
 ::lime::utils::Log_obj::__init__();
-::sys::net::Host_obj::__init__();
-::sys::ssl::Certificate_obj::__init__();
-::sys::ssl::Key_obj::__init__();
-::sys::ssl::Socket_obj::__init__();
 ::haxe::Log_obj::__boot();
 ::lime::_internal::backend::native::NativeCFFI_obj::__boot();
 ::lime::_internal::backend::native::NativeApplication_obj::__boot();
@@ -4549,10 +4497,5 @@ __files__boot();
 ::haxe::lang::Iterable_obj::__boot();
 ::openfl::utils::_internal::Lib_obj::__boot();
 ::openfl::utils::_internal::TouchData_obj::__boot();
-::sys::Http_obj::__boot();
-::sys::net::Host_obj::__boot();
-::sys::ssl::Certificate_obj::__boot();
-::sys::ssl::Key_obj::__boot();
-::sys::ssl::Socket_obj::__boot();
 }
 

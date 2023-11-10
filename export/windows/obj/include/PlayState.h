@@ -51,7 +51,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::flixel::FlxState_obj
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("PlayState",5d,83,c2,46); }
 
-		 ::flixel::text::FlxText ipText;
+		 ::flixel::text::FlxText texteroni;
 		void create();
 
 		void update(Float elapsed);

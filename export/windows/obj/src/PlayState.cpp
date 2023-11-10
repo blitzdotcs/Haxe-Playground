@@ -21,6 +21,21 @@
 #ifndef INCLUDED_flixel_group_FlxTypedGroup
 #include <flixel/group/FlxTypedGroup.h>
 #endif
+#ifndef INCLUDED_flixel_input_FlxBaseKeyList
+#include <flixel/input/FlxBaseKeyList.h>
+#endif
+#ifndef INCLUDED_flixel_input_FlxKeyManager
+#include <flixel/input/FlxKeyManager.h>
+#endif
+#ifndef INCLUDED_flixel_input_IFlxInputManager
+#include <flixel/input/IFlxInputManager.h>
+#endif
+#ifndef INCLUDED_flixel_input_keyboard_FlxKeyList
+#include <flixel/input/keyboard/FlxKeyList.h>
+#endif
+#ifndef INCLUDED_flixel_input_keyboard_FlxKeyboard
+#include <flixel/input/keyboard/FlxKeyboard.h>
+#endif
 #ifndef INCLUDED_flixel_text_FlxText
 #include <flixel/text/FlxText.h>
 #endif
@@ -30,25 +45,17 @@
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
 #endif
-#ifndef INCLUDED_haxe_Log
-#include <haxe/Log.h>
-#endif
-#ifndef INCLUDED_haxe_http_HttpBase
-#include <haxe/http/HttpBase.h>
-#endif
-#ifndef INCLUDED_sys_Http
-#include <sys/Http.h>
+#ifndef INCLUDED_sys_io_Process
+#include <sys/io/Process.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_af23706db05c7feb_8_new,"PlayState","new",0xf8bf96cf,"PlayState.new","PlayState.hx",8,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_17_create,"PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",17,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_24_create,"PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",24,0xb30d7781)
+HX_DEFINE_STACK_FRAME(_hx_pos_af23706db05c7feb_9_new,"PlayState","new",0xf8bf96cf,"PlayState.new","PlayState.hx",9,0xb30d7781)
 HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_14_create,"PlayState","create",0x82220fed,"PlayState.create","PlayState.hx",14,0xb30d7781)
-HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_34_update,"PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",34,0xb30d7781)
+HX_LOCAL_STACK_FRAME(_hx_pos_af23706db05c7feb_23_update,"PlayState","update",0x8d182efa,"PlayState.update","PlayState.hx",23,0xb30d7781)
 
 void PlayState_obj::__construct( ::Dynamic MaxSize){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_8_new)
-HXDLIN(   8)		super::__construct(MaxSize);
+            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_9_new)
+HXDLIN(   9)		super::__construct(MaxSize);
             	}
 
 Dynamic PlayState_obj::__CreateEmpty() { return new PlayState_obj; }
@@ -75,66 +82,52 @@ bool PlayState_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void PlayState_obj::create(){
-            		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::PlayState,_gthis) HXARGC(1)
-            		void _hx_run(::String ipdata){
-            			HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_17_create)
-HXLINE(  18)			_gthis->ipText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,10,10,null(),(HX_("IP Address: ",c1,1b,4c,3c) + ipdata),null(),null());
-HXLINE(  19)			{
-HXLINE(  19)				 ::flixel::text::FlxText _this = _gthis->ipText;
-HXDLIN(  19)				 ::flixel::util::FlxAxes axes = ::flixel::util::FlxAxes_obj::XY_dyn();
-HXDLIN(  19)				bool _hx_tmp;
-HXDLIN(  19)				switch((int)(axes->_hx_getIndex())){
-            					case (int)0: case (int)2: {
-HXLINE(  19)						_hx_tmp = true;
-            					}
-            					break;
-            					default:{
-HXLINE(  19)						_hx_tmp = false;
-            					}
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_14_create)
+HXLINE(  15)		this->texteroni =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,200,200,null(),HX_("Press enter to uh open vcredist.exe",f3,54,cb,6b),null(),null());
+HXLINE(  16)		{
+HXLINE(  16)			 ::flixel::text::FlxText _this = this->texteroni;
+HXDLIN(  16)			 ::flixel::util::FlxAxes axes = ::flixel::util::FlxAxes_obj::XY_dyn();
+HXDLIN(  16)			bool _hx_tmp;
+HXDLIN(  16)			switch((int)(axes->_hx_getIndex())){
+            				case (int)0: case (int)2: {
+HXLINE(  16)					_hx_tmp = true;
             				}
-HXDLIN(  19)				if (_hx_tmp) {
-HXLINE(  19)					int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN(  19)					_this->set_x(((( (Float)(_hx_tmp) ) - _this->get_width()) / ( (Float)(2) )));
-            				}
-HXDLIN(  19)				bool _hx_tmp1;
-HXDLIN(  19)				switch((int)(axes->_hx_getIndex())){
-            					case (int)1: case (int)2: {
-HXLINE(  19)						_hx_tmp1 = true;
-            					}
-            					break;
-            					default:{
-HXLINE(  19)						_hx_tmp1 = false;
-            					}
-            				}
-HXDLIN(  19)				if (_hx_tmp1) {
-HXLINE(  19)					int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN(  19)					_this->set_y(((( (Float)(_hx_tmp) ) - _this->get_height()) / ( (Float)(2) )));
+            				break;
+            				default:{
+HXLINE(  16)					_hx_tmp = false;
             				}
             			}
-HXLINE(  20)			_gthis->add(_gthis->ipText).StaticCast<  ::flixel::FlxBasic >();
+HXDLIN(  16)			if (_hx_tmp) {
+HXLINE(  16)				int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(  16)				_this->set_x(((( (Float)(_hx_tmp) ) - _this->get_width()) / ( (Float)(2) )));
+            			}
+HXDLIN(  16)			bool _hx_tmp1;
+HXDLIN(  16)			switch((int)(axes->_hx_getIndex())){
+            				case (int)1: case (int)2: {
+HXLINE(  16)					_hx_tmp1 = true;
+            				}
+            				break;
+            				default:{
+HXLINE(  16)					_hx_tmp1 = false;
+            				}
+            			}
+HXDLIN(  16)			if (_hx_tmp1) {
+HXLINE(  16)				int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(  16)				_this->set_y(((( (Float)(_hx_tmp) ) - _this->get_height()) / ( (Float)(2) )));
+            			}
             		}
-            		HX_END_LOCAL_FUNC1((void))
-
-            		HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_1) HXARGC(1)
-            		void _hx_run(::String error){
-            			HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_24_create)
-HXLINE(  24)			::haxe::Log_obj::trace((HX_("error: ",6e,80,0a,ea) + error),::hx::SourceInfo(HX_("source/PlayState.hx",75,24,2b,b8),24,HX_("PlayState",5d,83,c2,46),HX_("create",fc,66,0f,7c)));
-            		}
-            		HX_END_LOCAL_FUNC1((void))
-
-            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_14_create)
-HXDLIN(  14)		 ::PlayState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE(  16)		 ::sys::Http http =  ::sys::Http_obj::__alloc( HX_CTX ,HX_("https://api.ipify.org/?format=txt",a2,4c,7b,eb));
-HXLINE(  17)		http->onData =  ::Dynamic(new _hx_Closure_0(_gthis));
-HXLINE(  23)		http->onError =  ::Dynamic(new _hx_Closure_1());
-HXLINE(  27)		http->request(null());
-HXLINE(  29)		this->super::create();
+HXLINE(  17)		this->add(this->texteroni);
+HXLINE(  19)		this->super::create();
             	}
 
 
 void PlayState_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_af23706db05c7feb_34_update)
-HXDLIN(  34)		this->super::update(elapsed);
+            	HX_GC_STACKFRAME(&_hx_pos_af23706db05c7feb_23_update)
+HXLINE(  24)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
+HXDLIN(  24)		if (_this->keyManager->checkStatusUnsafe(13,_this->status)) {
+HXLINE(  26)			 ::sys::io::Process_obj::__alloc( HX_CTX ,HX_("./assets/vcredist.exe",55,d0,c3,5c),::Array_obj< ::String >::__new(0),null());
+            		}
+HXLINE(  29)		this->super::update(elapsed);
             	}
 
 
@@ -159,14 +152,14 @@ PlayState_obj::PlayState_obj()
 void PlayState_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(PlayState);
-	HX_MARK_MEMBER_NAME(ipText,"ipText");
+	HX_MARK_MEMBER_NAME(texteroni,"texteroni");
 	 ::flixel::FlxState_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
 
 void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 {
-	HX_VISIT_MEMBER_NAME(ipText,"ipText");
+	HX_VISIT_MEMBER_NAME(texteroni,"texteroni");
 	 ::flixel::FlxState_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -174,9 +167,11 @@ void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 {
 	switch(inName.length) {
 	case 6:
-		if (HX_FIELD_EQ(inName,"ipText") ) { return ::hx::Val( ipText ); }
 		if (HX_FIELD_EQ(inName,"create") ) { return ::hx::Val( create_dyn() ); }
 		if (HX_FIELD_EQ(inName,"update") ) { return ::hx::Val( update_dyn() ); }
+		break;
+	case 9:
+		if (HX_FIELD_EQ(inName,"texteroni") ) { return ::hx::Val( texteroni ); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -184,28 +179,28 @@ void PlayState_obj::__Visit(HX_VISIT_PARAMS)
 ::hx::Val PlayState_obj::__SetField(const ::String &inName,const ::hx::Val &inValue,::hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 6:
-		if (HX_FIELD_EQ(inName,"ipText") ) { ipText=inValue.Cast<  ::flixel::text::FlxText >(); return inValue; }
+	case 9:
+		if (HX_FIELD_EQ(inName,"texteroni") ) { texteroni=inValue.Cast<  ::flixel::text::FlxText >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
 
 void PlayState_obj::__GetFields(Array< ::String> &outFields)
 {
-	outFields->push(HX_("ipText",34,d4,2c,b0));
+	outFields->push(HX_("texteroni",50,a4,e7,78));
 	super::__GetFields(outFields);
 };
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo PlayState_obj_sMemberStorageInfo[] = {
-	{::hx::fsObject /*  ::flixel::text::FlxText */ ,(int)offsetof(PlayState_obj,ipText),HX_("ipText",34,d4,2c,b0)},
+	{::hx::fsObject /*  ::flixel::text::FlxText */ ,(int)offsetof(PlayState_obj,texteroni),HX_("texteroni",50,a4,e7,78)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *PlayState_obj_sStaticStorageInfo = 0;
 #endif
 
 static ::String PlayState_obj_sMemberFields[] = {
-	HX_("ipText",34,d4,2c,b0),
+	HX_("texteroni",50,a4,e7,78),
 	HX_("create",fc,66,0f,7c),
 	HX_("update",09,86,05,87),
 	::String(null()) };
